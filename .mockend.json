@@ -1,0 +1,17 @@
+{
+	"cidade":
+	{
+		"id": "int",
+		"cidade": "string",
+		"createdAt": "date",
+		"updatedAt": "date",
+		"postos": "posto[]"
+	},
+	
+	"posto":
+	{
+		"id": "int",
+		"cidadeId": "cidade.id",
+		"reservatorio": "percentage"
+	}
+}
