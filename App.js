@@ -1,21 +1,37 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import React from "react";
+import { StyleSheet, Text, View } from "react-native";
+import {
+  BreadProvider,
+  Colors,
+  defaultTheme as breadDefTheme,
+} from "material-bread";
+import SearchScreen from "./src/screens/SearchScreen";
+import { NavigationContainer, DefaultTheme } from "@react-navigation/native";
+// Material Bread, React Navigation, Formik, Yup, Context API
+import Stack from "./Stack";
+
+const theme = {
+  ...breadDefTheme,
+  primary: {
+    main: Colors.pink["500"],
+    dark: Colors.blue["600"],
+    light: Colors.red["300"],
+  },
+  colors: {
+    ...DefaultTheme.colors,
+    // background: Colors.pink["500"],
+    // text: Colors.red["300"],
+    // primary: Colors.blue["600"],
+  },
+};
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <BreadProvider value={theme}>
+      <NavigationContainer theme={theme}>
+        <Stack />
+      </NavigationContainer>
+    </BreadProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

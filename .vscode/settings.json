@@ -1,0 +1,15 @@
+{
+	"editor.fontFamily": "'Fira Code'",
+	"editor.fontLigatures": true,
+	"editor.detectIndentation": false,
+	"python.pythonPath": "/home/alexandre/.local/share/virtualenvs/leads-project-p4O2XQ_8/bin/python",
+	"python.formatting.provider": "black",
+	"[javascript]": {
+	"editor.tabSize": 2
+	},
+	"[javascriptreact]": {
+	"editor.tabSize": 2
+	},
+	// "python.linting.pylintEnabled": true,
+	"python.linting.enabled": true
+}

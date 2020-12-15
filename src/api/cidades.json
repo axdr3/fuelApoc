@@ -1,0 +1,22 @@
+{
+
+	"cidades": [
+		
+		{
+			"id": 1,
+			"cidade": "Florianopolis",
+			"created_at": "2017-06-01T00:00:00",
+			"updated_at": "2019-06-01T00:00:00",
+			"postos": [
+				{
+					"id": 1,
+					"cidade_id": 1,
+					"reservatorio": 0.2,
+					"latitude": "",
+					"longitude":""
+
+				}
+			]
+		}
+	]
+}
